@@ -1,0 +1,74 @@
+/* Use font Poppins from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Code for general */
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.container {
+    width: 100%;
+}
+
+/* Code for navbar */
+nav {
+    background-color: #15af7c;
+    padding: 0.5rem 0;
+}
+nav .container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav .logo, nav .icon, nav .menu a:hover {
+    color: white;
+}
+nav a {
+    text-decoration: none;
+}
+nav .logo, nav .icon {
+    padding: 0.5rem 1rem;
+}
+nav .logo {
+    font-weight: bold;
+}
+nav .icon {
+    margin-left: auto;
+    cursor: pointer;
+}
+nav .menu {
+    padding: 1rem 0;
+    width: 100%;
+    display: none;
+}
+nav .menu.active {
+    display: block !important;
+}
+nav .menu li {
+    list-style: none;
+}
+nav .menu a {
+    color: rgba(255, 255, 255, 0.7);
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive element */
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+} 
